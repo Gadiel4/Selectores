@@ -23,19 +23,80 @@
         /*div[class$=ar]{
             background-color: green;
         }*//*Ultimo de los valore termina con ar*/
-        div[class*=bar]{
+        /*div[class*=bar]{
             background-color: green;
+        }
+        button:hover{
+            background-color: blue;
+            color: white
+        }
+        input:disabled{
+            background-color: rgb(19, 19, 5);
+            color: white
+
+        }
+
+        p:first-child{
+            color:green;
+        }*/
+        /*p::first-line{
+            color:orange;
+        }*/
+
+        .uno,.dos{
+            color:rgba(91, 111, 165, 0.404);
+        }
+
+        .contenedor p{
+            background-color: orchid;
+        }
+        /*SELECCIONAMOS ELEMNTOS HIJOS DEL CONTENDOR*/
+        .contenedor >p{
+            background-color: rgb(112, 162, 218);
         }
     </style>
 </head>
 <body>
+    <!--Descendientes-->
+    <div class="contenedor">
+        <p>Hola</p>
+        <div>
+            <div>
+                <p>MUNDO</p>
+            </div>
+        </div>
+    </div>
+    <!--Pseudoelememtos-->
+    <p class="uno">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos harum libero quas nam accusamus est odit ab atque officia, vero aliquam et. Nobis, consequatur repellat? Aliquam eaque dicta corporis obcaecati!</p>
+    <div class="dos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rerum delectus eos corporis, magni, sunt ad ullam placeat molestiae corrupti facere labore earum, exercitationem animi. Veritatis odio amet est tempore.</div>
+    <!---->
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius perferendis aliquam blanditiis nobis saepe laudantium sapiente placeat quaerat ullam repudiandae, maiores asperiores laboriosam harum corporis tempore animi, quisquam deleniti! Officiis.</p>
     <p title="parrafo1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex pariatur assumenda corrupti facere officiis nam consequuntur quidem maxime itaque voluptas ducimus similique, neque harum? Saepe inventore illo quod consequuntur repellat!</p>
     <p title="parrafo2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex pariatur assumenda corrupti facere officiis nam consequuntur quidem maxime itaque voluptas ducimus similique, neque harum? Saepe inventore illo quod consequuntur repellat!</p>
     <div class="foo bar" >HOLA MUNDO 1</div> <!--2 diferentes clases 1. foo 2. bar-->
     <div class="abc_bar_xyz" >HOLA MUNDO 1,1</div> <!--2 diferentes clases 1. foo 2. bar-->
-    <div class="mqp_bar" >HOLA MUNDO 1,2</div> <!--2 diferentes clases 1. foo 2. bar-->
+    <div class="mqp_bar_ntm baz" >HOLA MUNDO 1,2</div> <!--2 diferentes clases 1. foo 2. bar-->
     
     <div class="bar bazz">HOLA MUNDO 2</div><!--bar 2 clases con el mismo nombre-->
+
+    <button> Enviar</button>
+
+    <form>
+        <label for="fecha">FECHA</label>
+        <input name="fecha" type="date" disabled>
+    </form>
+
+    <div>
+        <p>This text is selected 1</p>
+        <p>text isn't selectd. 2</p> 
+    </div>
+    <!-- ul>li*5 -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
 </body>
 </html>
