@@ -12,6 +12,20 @@
         p[title=parrafo2]{
             background-color: orange;
         }
+
+        /*div[class~=bar]{
+            background-color: green;
+        }*//*2 clases ambas*/
+
+        /*div[class^=ba]{
+            background-color: green;
+        }*//**/
+        /*div[class$=ar]{
+            background-color: green;
+        }*//*Ultimo de los valore termina con ar*/
+        div[class*=bar]{
+            background-color: green;
+        }
     </style>
 </head>
 <body>
@@ -19,6 +33,9 @@
     <p title="parrafo1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex pariatur assumenda corrupti facere officiis nam consequuntur quidem maxime itaque voluptas ducimus similique, neque harum? Saepe inventore illo quod consequuntur repellat!</p>
     <p title="parrafo2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex pariatur assumenda corrupti facere officiis nam consequuntur quidem maxime itaque voluptas ducimus similique, neque harum? Saepe inventore illo quod consequuntur repellat!</p>
     <div class="foo bar" >HOLA MUNDO 1</div> <!--2 diferentes clases 1. foo 2. bar-->
-    <div>HOLA MUNDO 2</div>
+    <div class="abc_bar_xyz" >HOLA MUNDO 1,1</div> <!--2 diferentes clases 1. foo 2. bar-->
+    <div class="mqp_bar" >HOLA MUNDO 1,2</div> <!--2 diferentes clases 1. foo 2. bar-->
+    
+    <div class="bar bazz">HOLA MUNDO 2</div><!--bar 2 clases con el mismo nombre-->
 </body>
 </html>
